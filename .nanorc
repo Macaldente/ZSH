@@ -1,0 +1,10 @@
+include "/usr/share/nano/*.nanorc"
+
+set linenumbers     # Zeilennummern anzeigen
+set tabsize 4       # Tabgröße auf 4 Leerzeichen setzen
+set autoindent      # Automatische Einrückung aktivieren
+
+bind M-F nextword main
+bind M-B prevword main
+unbind ^_ all
+bind ^_ gotoline all

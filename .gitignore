@@ -1,0 +1,41 @@
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ZSH specific
+.zsh_history
+.zsh_sessions/
+.zcompdump*
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Log files
+*.log
+
+# Personal/sensitive files (uncomment if you have any)
+# .env
+# .secrets
+# personal_aliases.zsh
+
+# Backup files
+*.bak
+*.backup
+
+# Editor files
+.vscode/
+.idea/
+
+# OS generated files
+*.pid
+*.seed
+*.lock

@@ -1,0 +1,76 @@
+# https://starship.rs/config/
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+[character]
+success_symbol = '[➜](bold green)'
+error_symbol = '[➜](bold red)'
+
+[shell]
+disabled = false
+style = "cyan bold"
+nu_indicator = 'nu-shell'
+fish_indicator = '󰈺 '
+
+[username]
+style_user = 'white bold'
+style_root = 'black bold'
+format = '[$user]($style)'
+disabled = false
+show_always = true
+aliases = { "robertwunderl" = "meister " }
+
+[hostname]
+ssh_only = true
+format = 'on [$hostname](bold red) '
+trim_at = '.'
+disabled = false
+
+[directory]
+truncate_to_repo = false
+truncation_length = 0
+truncation_symbol = '…/'
+home_symbol = '~'
+read_only_style = 'bold red'
+read_only = ' 🔒'
+format = ' [$path]($style)[$read_only]($read_only_style) '
+
+[python]
+disabled = true
+
+[git_branch]
+disabled = true
+
+[git_status]
+disabled = true
+
+[cmd_duration]
+min_time = 2_000
+format = ' took [$duration](bold yellow) '
+
+# Status-Code anzeigen bei Fehlern
+[status]
+style = 'bold red'
+symbol = '🔴'
+format = '[$symbol $common_meaning$signal_name$maybe_int]($style) '
+map_symbol = true
+disabled = false
+
+# Zeit-Anzeige
+[time]
+disabled = true
+format = '🕙[\[ $time \]]($style) '
+time_format = '%T'
+utc_time_offset = '+1'
+
+# Memory-Usage (optional)
+[memory_usage]
+disabled = true
+threshold = -1
+symbol = '🐏'
+style = 'bold dimmed green'
+
+# End of the config file

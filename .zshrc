@@ -29,14 +29,15 @@ compinit -d ~/.zcompdump
 
 # --- Alias Sektion ---
 # ls
-alias ls="eza"
-alias la="eza -a"
-alias ll="eza -l"
-alias lla="eza -al"
-# eza
-alias ezaa="eza -a"
-alias ezal="eza -l"
-alias ezla="eza -al"
+alias ls='eza --group-directories-first --icons=always'
+alias ll='eza -l'
+alias la='eza -a --group-directories-first --icons=always'
+alias lla='eza -la'
+# eza = "the BETTER ls"
+alias eza='eza --group-directories-first --icons=always'
+alias ezal='eza -l'
+alias ezaa='eza -a --group-directories-first --icons=always'
+alias ezla='eza -la'
 
 # clear the clipboard Funktion
 clrclp () {
